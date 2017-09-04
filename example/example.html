@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="../tristate_button.js"></script>
+    <script>
+        var callback = function(value) {
+            alert(value);
+        };
+    </script>
+    <style>
+        .content {
+            text-align: center;
+            padding: 100px;
+        }
+        input[type=button] {
+            width: 150px;
+            height: 100px;
+            font-size: 200%;
+        }
+        .tristate-btn-active.tristate-btn-yes {
+            background-color: lightgreen;
+        }
+        .tristate-btn-inactive.tristate-btn-yes {
+            background-color: grey;
+        }
+        .tristate-btn-active.tristate-btn-no {
+            background-color: indianred;
+        }
+        .tristate-btn-inactive.tristate-btn-no {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="tristate-button" data-callback="callback">
+        <input type="button" class="tristate-btn-no" value="No"/>
+        <input type="button" class="tristate-btn-yes" value="Yes"/>
+    </div>
+</div>
+</body>
+</html>
