@@ -1,4 +1,4 @@
-$(document).ready(function(){
+var activateTristateButtons = function(){
     const active = 'tristate-btn-active';
     const inactive = 'tristate-btn-inactive';
     const yes = 'tristate-btn-yes';
@@ -51,4 +51,4 @@ $(document).ready(function(){
         }
     });
 
-});
+};
